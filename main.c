@@ -14,6 +14,8 @@ int main()
     int grade1;
     int grade2;
     int grade3;
+    int grade4;
+    int grade5;
     double averageGrade;
     unsigned int age;
 
@@ -26,21 +28,23 @@ int main()
     printf("Enter your admission score:");
     scanf("%f", &admissionScore);
 
-    printf("Enter a grade for subject น1:");
+    printf("Enter a grade for subject ยน1:");
     scanf("%d", &grade1);
 
-    printf("Enter a grade for subject น2:");
+    printf("Enter a grade for subject ยน2:");
     scanf("%d", &grade2);
 
-    printf("Enter a grade for subject น3:");
+    printf("Enter a grade for subject ยน3:");
     scanf("%d", &grade3);
 
     printf("Enter your age:");
     scanf("%u", &age);
 
-    averageGrade=(double)(grade1 + grade2 + grade3)/3;
+    averageGrade = (double)(grade1 + grade2 + grade3 + grade4 + grade5)/5;
 
     system("cls");
+    printf("***************\n");
+    printf("===============\n");
 
     printf("%s", University);
 
@@ -58,9 +62,9 @@ int main()
 
     printf("\n---------------------------");
 
-    printf("\nadmission score: %.2f", admissionScore);
+    printf("\nadmission score: %.1f", admissionScore);
 
-    printf("\naverage grade = %.3lf", averageGrade);
+    printf("\naverage grade = %.2lf", averageGrade);
 
     printf("\n");
 
